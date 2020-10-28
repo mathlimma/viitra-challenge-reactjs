@@ -8,8 +8,7 @@ import Input from '../Input';
 const ModalEditFood = ({
   isOpen,
   setIsOpen,
-  editingFood,
-  handleUpdateFood,
+  editingFood
 }) => {
   const formRef = useRef(null);
 
