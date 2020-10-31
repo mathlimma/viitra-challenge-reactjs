@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 import Header from '../../components/Header';
 
-import api from '../../services/api';
-
 import Food from '../../components/Food';
 import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
@@ -25,11 +23,19 @@ const Dashboard = () => {
   }
 
   async function handleUpdateFood(food) {
-    // TODO UPDATE A FOOD PLATE ON THE API
+    try {
+      // TODO UPDATE A FOOD PLATE ON THE API
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   async function handleDeleteFood(id) {
-    // TODO DELETE A FOOD PLATE FROM THE API
+    try {
+      // TODO DELETE A FOOD PLATE ON THE API
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   function toggleModal() {
@@ -41,7 +47,11 @@ const Dashboard = () => {
   }
 
   function handleEditFood(food) {
-    // TODO SET THE CURRENT EDITING FOOD ID IN THE STATE
+    try {
+      // TODO SET THE CURRENT EDITING FOOD ID IN THE STATE
+    } catch (err) {
+      console.log(err);
+    }
   }
 
   return (

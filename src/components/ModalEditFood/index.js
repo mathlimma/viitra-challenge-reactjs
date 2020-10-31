@@ -9,7 +9,7 @@ const ModalEditFood = ({
   isOpen,
   setIsOpen,
   editingFood,
-  handleUpdateFood,
+  handleUpdateFood
 }) => {
   const formRef = useRef(null);
 
